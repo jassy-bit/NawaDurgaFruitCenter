@@ -1,4 +1,3 @@
-/* General page styling */
 body {
   font-family: Arial, sans-serif;
   background-color: #5f9ea0; /* cadet blue */
@@ -20,12 +19,32 @@ body {
 }
 
 /* Form container */
-form {
+section {
   background: #f0f8ff; /* light background for contrast */
   padding: 30px;
+    display: grid;
+  grid-template-columns: auto auto;
   border-radius: 0 0 8px 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  width: 300px;
+  width: fit-content;
+}
+
+bold{
+  text-align: start;
+    font-family: "Playwrite NO", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: 800;
+  font-size: large;
+  
+}
+.logoName{
+  text-align: start;
+    font-family: "Playwrite NO", cursive;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-size: normal;
+  font-style: normal;
 }
 
 /* Input groups */
@@ -85,5 +104,17 @@ p a {
 p a:hover {
   text-decoration: underline;
 }
+.logo-container {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.logo {
+  width: 120px; /* Adjust size as needed */
+  height: auto;
+  border-radius: 50%;
+}
+
 
 

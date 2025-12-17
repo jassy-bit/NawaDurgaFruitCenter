@@ -1,0 +1,118 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #e8f1f4, #f7fafc);
+    padding: 30px;
+    color: #2c3e50;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, cadetblue, #5f9ea0);
+    color: white;
+    padding: 25px 35px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+header h1 {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.cart-btn {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255,255,255,0.4);
+    transition: 0.3s ease;
+}
+
+.cart-btn:hover {
+    background: white;
+    color: cadetblue;
+}
+
+/* Cart Container */
+.cart-container {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    padding: 30px;
+    border-radius: 16px;
+    max-width: 750px;
+    margin: auto;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.5);
+}
+
+/* Empty Cart */
+.cart-container p {
+    text-align: center;
+    font-size: 20px;
+    color: #6c7a89;
+}
+
+/* Cart Items */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    font-size: 18px;
+    color: #34495e;
+    transition: 0.2s ease;
+}
+
+.cart-item:hover {
+    transform: translateX(4px);
+    color: cadetblue;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+/* Total */
+.cart-container h3 {
+    text-align: right;
+    margin-top: 25px;
+    font-size: 24px;
+    color: cadetblue;
+    font-weight: 700;
+}
+
+/* Checkout Button */
+.checkout-btn {
+    width: 100%;
+    background: linear-gradient(135deg, cadetblue, #4f7f82);
+    color: white;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 25px;
+    transition: 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.checkout-btn:hover {
+    background: #3e6b6e;
+    transform: translateY(-2px);
+}

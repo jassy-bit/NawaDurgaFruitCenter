@@ -1,68 +1,71 @@
-* {
-  margin: 0px;
-  padding: 0px;
-}
+/* Page background */
 body {
-  font-size: 120%;
-  background: #F8F8FF;
+    font-family: Arial, sans-serif;
+    background: #f2f9f9;
+    margin: 0;
+    padding: 40px;
 }
 
-.header {
-  width: 30%;
-  margin: 50px auto 0px;
-  color: white;
-  background: #5F9EA0;
-  text-align: center;
-  border: 1px solid #B0C4DE;
-  border-bottom: none;
-  border-radius: 10px 10px 0px 0px;
-  padding: 20px;
+/* Form container */
+form {
+    width: 350px;
+    margin: auto;
+    padding: 25px;
+    background: #ffffff;
+    border: 2px solid cadetblue;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(95, 158, 160, 0.25);
 }
-form, .content {
-  width: 30%;
-  margin: 0px auto;
-  padding: 20px;
-  border: 1px solid #B0C4DE;
-  background: white;
-  border-radius: 0px 0px 10px 10px;
+
+/* Labels */
+label {
+    font-size: 15px;
+    color: #2f4f4f;
+    font-weight: bold;
 }
-.input-group {
-  margin: 10px 0px 10px 0px;
+
+/* Input fields */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 20px;
+    border: 1.8px solid cadetblue;
+    border-radius: 6px;
+    outline: none;
+    transition: 0.3s;
 }
-.input-group label {
-  display: block;
-  text-align: left;
-  margin: 3px;
+
+/* Input focus effect */
+input:focus {
+    border-color: #2e6f73;
+    box-shadow: 0 0 5px rgba(95, 158, 160, 0.6);
 }
-.input-group input {
-  height: 30px;
-  width: 93%;
-  padding: 5px 10px;
-  font-size: 16px;
-  border-radius: 5px;
-  border: 1px solid gray;
+
+/* Submit button */
+button {
+    width: 100%;
+    padding: 12px;
+    background: cadetblue;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
 }
-.btn {
-  padding: 10px;
-  font-size: 15px;
-  color: white;
-  background: #5F9EA0;
-  border: none;
-  border-radius: 5px;
+
+/* Hover effect */
+button:hover {
+    background: #4b7e80;
 }
-.error {
-  width: 92%; 
-  margin: 0px auto; 
-  padding: 10px; 
-  border: 1px solid #a94442; 
-  color: #a94442; 
-  background: #f2dede; 
-  border-radius: 5px; 
-  text-align: left;
+
+button:disabled{
+    cursor: not-allowed;
 }
-.success {
-  color: #3c763d; 
-  background: #dff0d8; 
-  border: 1px solid #3c763d;
-  margin-bottom: 20px;
+
+/* i love sumit */
+#error{
+    color: red;
 }

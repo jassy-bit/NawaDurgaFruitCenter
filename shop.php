@@ -39,7 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['add_cart'])) {
 <div class="shop-actions">
     <input type="text" placeholder="Search products..." class="search-bar">
     <a href="cart.php" class="cart-button">
-        View Cart
+        🛒View Cart
     </a>
 </div>
 

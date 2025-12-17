@@ -28,7 +28,7 @@ if (isset($_GET["logout"])) {
                         <li><a href="login.php" class="lsr">Login</a></li>
                         <li><a href="sign-up.php" class="lsr">Signup</a></li>
                     <?php endif ?>
-                    <li><a href="account.html" class="lsr2">Account</a></li>
+                    <li><a href="account.php" class="lsr2">Account</a></li>
                 </ul>
             </nav>
         </div>

@@ -57,7 +57,7 @@ if (isset($_POST['checkout'])) {
 <body>
 
 <header>
-    <h1>Your Cart</h1>
+    <h1>Your Cart🛒</h1>
     <a href="shop.php" class="cart-btn">Back to Shop</a>
 </header>
 

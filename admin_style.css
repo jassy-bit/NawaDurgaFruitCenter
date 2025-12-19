@@ -1,0 +1,188 @@
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: #5f9ea0; /* cadet blue */
+    color: #333;
+}
+
+/* ===========================
+   LOGIN PAGE
+   =========================== */
+.login-box {
+    width: 360px;
+    background: #ffffff;
+    padding: 35px 30px;
+    margin: 120px auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    text-align: center;
+    animation: fadeIn 0.6s ease;
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    color: #5f9ea0;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #dcdcdc;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+.login-box input:focus {
+    border-color: #5f9ea0;
+    box-shadow: 0 0 6px rgba(95,158,160,0.4);
+    outline: none;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    background: #5f9ea0;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.login-box button:hover {
+    background: #4b8587;
+    transform: translateY(-2px);
+}
+
+.error {
+    color: #d9534f;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===========================
+   DASHBOARD
+   =========================== */
+.dashboard {
+    max-width: 1100px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+.dashboard h1 {
+    color: #5f9ea0;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.dashboard p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Cards Grid */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.card {
+    background: #5f9ea0;
+    color: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.card:hover {
+    background: #4b8587;
+    transform: translateY(-4px);
+}
+
+/* Logout Button */
+.logout {
+    display: inline-block;
+    margin-top: 35px;
+    padding: 12px 28px;
+    background: #b22222;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.logout:hover {
+    background: #8b1a1a;
+    transform: translateY(-2px);
+}
+/* TABLE RESPONSIVE */
+.table-box {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    color: #333;
+}
+
+table th, table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background: #4b8587;
+    color: white;
+}
+
+button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.danger {
+    background: #b22222;
+    color: white;
+}
+
+/* CARD LINKS */
+.card {
+    text-decoration: none;
+    color: #333;
+}
